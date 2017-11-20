@@ -1,0 +1,16 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>你的请求头信息</title>
+</head>
+<body>
+    <table border="1" width="300px" height="100px" ">
+        {% for k,v in html.items %}
+        <tr width="150px">
+            <td align="left" >{{ k }}</td><td align="left">{{ v }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
