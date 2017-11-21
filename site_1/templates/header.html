@@ -2,15 +2,19 @@
         "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+     {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'site_1/css/base.css' %}" >
     <title>你的请求头信息</title>
 </head>
 <body>
-    <table border="1" width="300px" height="100px" ">
+    <table>
         {% for k,v in html.items %}
-        <tr width="150px">
-            <td align="left" >{{ k }}</td><td align="left">{{ v }}</td>
+        <tr>
+            <td >{{ k }}</td><td>{{ v }}</td>
         </tr>
         {% endfor %}
     </table>
+
 </body>
 </html>

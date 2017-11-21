@@ -19,5 +19,5 @@ from site_1 import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'header', views.header),
+    url(r'^header/', views.header),
 ]
