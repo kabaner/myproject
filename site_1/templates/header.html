@@ -5,18 +5,23 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-     {% load static %}
+    {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'site_1/css/bootstrap.min.css' %}" >
     <title>你的请求头信息</title>
 </head>
 <body>
-    <table>
-        {% for k,v in html.items %}
+<table class = "table">
+    <thead>
+    <th>字段名</th>
+    <th>值</th>
+    </thead>
+    <tbody>
+    {% for k,v in html.items %}
         <tr>
             <td >{{ k }}</td><td>{{ v }}</td>
         </tr>
-        {% endfor %}
-    </table>
-
+    {% endfor %}
+    </tbody>
+</table>
 </body>
 </html>

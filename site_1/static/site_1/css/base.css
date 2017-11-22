@@ -1,13 +1,3 @@
 table {
-    border: 1px solid black;
-    width: 500px;
-    height: 500px ;
-}
-tr{
-    width: 250px ;
-    border:1px  solid #DDDDDD;
-}
-td{
-    align: left;
-    height: 100px;
+
 }
