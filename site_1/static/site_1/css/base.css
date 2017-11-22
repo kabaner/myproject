@@ -5,7 +5,9 @@ table {
 }
 tr{
     width: 250px ;
+    border:1px  solid #DDDDDD;
 }
 td{
-    align: left ;
+    align: left;
+    height: 100px;
 }
